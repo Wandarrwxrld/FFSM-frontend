@@ -14,5 +14,4 @@
      <script>window.FFMS_API_BASE = 'https://your-app-name.up.railway.app/api';</script>
    That overrides this file's value without touching any code.
    ========================================================================== */
-
-export const API_BASE = window.FFMS_API_BASE || 'http://localhost:8888/ffms-backend/api';
+export const API_BASE = window.FFMS_API_BASE || 'https://web-production-bdd2b6.up.railway.app/api';
