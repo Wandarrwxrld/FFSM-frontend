@@ -11,7 +11,6 @@
 <body>
 
 <div class="app-shell">
-  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
   <aside class="sidebar" id="sidebar">
     <div class="brand">FF<span>MS</span></div>
     <nav id="navContainer"></nav>
@@ -46,6 +45,9 @@
     <main class="view" id="view"></main>
   </div>
 </div>
+
+<!-- Overlays live OUTSIDE .app-shell so they never become grid items -->
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
 <div class="overlay" id="overlay"></div>
 <aside class="drawer" id="drawer">
