@@ -72,16 +72,23 @@ function buildSidebar(activeKey){
   });
 }
 
+/* ---------------------------------------------------------------------- */
+/* Sidebar Toggle                                                          */
+/* ---------------------------------------------------------------------- */
 function setSidebarOpen(open){
-  document.getElementById('sidebar').classList.toggle('open', open);
-  document.getElementById('sidebarBackdrop').classList.toggle('show', open);
+  const sidebar = document.getElementById('sidebar');
+  const backdrop = document.getElementById('sidebarBackdrop');
+  if (sidebar) sidebar.classList.toggle('open', open);
+  if (backdrop) backdrop.classList.toggle('show', open);
 }
-document.getElementById('menuToggle').addEventListener('click', () => {
-  const isOpen = document.getElementById('sidebar').classList.contains('open');
+
+document.getElementById('menuToggle')?.addEventListener('click', () => {
+  const sidebar = document.getElementById('sidebar');
+  const isOpen = sidebar ? sidebar.classList.contains('open') : false;
   setSidebarOpen(!isOpen);
 });
-document.getElementById('sidebarBackdrop').addEventListener('click', () => setSidebarOpen(false));
 
+document.getElementById('sidebarBackdrop')?.addEventListener('click', () => setSidebarOpen(false));
 /* ---------------------------------------------------------------------- */
 /* Farm picker                                                            */
 /* ---------------------------------------------------------------------- */
