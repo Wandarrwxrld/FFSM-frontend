@@ -10,4 +10,4 @@
    Alternative with no redeploy: set window.FFMS_API_BASE via Netlify's
    Snippet Injection and it overrides the value below.
    ========================================================================== */
-export const API_BASE = window.FFMS_API_BASE || 'https://ffsm-backend-ej14fjuhn-wandarrwxrld.vercel.app/api';
+export const API_BASE = window.FFMS_API_BASE || 'https://fffsm-backend.vercel.app/api';
