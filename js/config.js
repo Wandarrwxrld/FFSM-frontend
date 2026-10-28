@@ -15,3 +15,6 @@
    That overrides this file's value without touching any code.
    ========================================================================== */
 export const API_BASE = window.FFMS_API_BASE || 'https://ffsm-backend-ej14fjuhn-wandarrwxrld.vercel.app';
+window.ENV = {
+    API_BASE_URL: 'https://ffsm-backend-ej14fjuhn-wandarrwxrld.vercel.app/api'
+};
