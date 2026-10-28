@@ -14,4 +14,4 @@
      <script>window.FFMS_API_BASE = 'https://your-app-name.up.railway.app/api';</script>
    That overrides this file's value without touching any code.
    ========================================================================== */
-export const API_BASE = window.FFMS_API_BASE || 'https://ffsm-backend-ej14fjuhn-wandarrwxrld.vercel.app/';
+export const API_BASE = window.FFMS_API_BASE || 'https://ffsm-backend-ej14fjuhn-wandarrwxrld.vercel.app';
