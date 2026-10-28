@@ -1,20 +1,13 @@
 /* ==========================================================================
    FFMS — backend URL configuration.
-   This is the ONE line to change once your Railway backend is live:
+   The backend is hosted on Vercel; the MySQL database stays on Railway.
 
-     export const API_BASE = 'https://your-app-name.up.railway.app/api';
+   Use the backend's STABLE production domain here (Vercel dashboard ->
+   backend project -> Domains), e.g. https://your-backend.vercel.app —
+   NOT a per-deployment URL like https://name-abc123xyz-team.vercel.app,
+   which changes on every deploy and is login-protected by default.
 
-   Everything else in the front end imports API_BASE from here — nothing
-   else needs to change. After editing this file, redeploy the Netlify
-   site (drag-and-drop the folder again, or git push if connected).
-
-   Alternative, no-redeploy option: leave this file alone and instead set
-   window.FFMS_API_BASE via Netlify's Snippet Injection (Site settings →
-   Build & deploy → Post processing → Snippet injection → Before </head>):
-     <script>window.FFMS_API_BASE = 'https://your-app-name.up.railway.app/api';</script>
-   That overrides this file's value without touching any code.
+   Alternative with no redeploy: set window.FFMS_API_BASE via Netlify's
+   Snippet Injection and it overrides the value below.
    ========================================================================== */
 export const API_BASE = window.FFMS_API_BASE || 'https://ffsm-backend-ej14fjuhn-wandarrwxrld.vercel.app/api';
-window.ENV = {
-    API_BASE_URL: 'https://ffsm-backend-ej14fjuhn-wandarrwxrld.vercel.app/api'
-};
